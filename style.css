@@ -1,0 +1,128 @@
+
+:root{
+    /* color */
+    --color-primary-900: hsl(0, 0%, 8%);
+    --color-primary-800: hsl(0, 0%, 12%);
+    --color-primary-700: hsl(0, 0%, 20%);
+    --color-neutral: hsl(0, 0%, 100%);
+    --color-accent: hsl(75, 94%, 57%);
+
+    /* font */
+    --font-primary: 'Inter', sans-serif;
+    --text-size-sm: .875rem;
+    --text-size-md: 1rem;
+    --text-size-lg: 1.5rem;
+
+    --text-bold: 900;
+    --text-medium: 700;
+    --text-regular: 400;
+
+    --spacing-500: 2.5rem;
+    --spacing-300: 1.5rem;
+    --spacing-200: 1rem;
+    --spacing-150: .75rem;
+    --spacing-100: .5rem;
+    --spacing-50: .25rem;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-primary-900);
+    font-family: var(--font-primary);
+    color: var(--color-neutral);
+    line-height: 150%;
+}
+
+/* mobile */
+
+.profile-wrapper{
+    width: 20.438rem;
+    display: flex;
+    margin: var(--spacing-500) auto;
+    padding: var(--spacing-300);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-300);
+    background-color: var(--color-primary-800);
+    border-radius: .75rem;;
+}
+
+.profile-wrapper img{
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+}
+
+.profile-wrapper h1{
+    font-size: var(--text-size-lg);
+    font-weight: var(--text-bold);
+}
+
+.profile-wrapper h2{
+    font-size: var(--text-size-md);
+    font-weight: var(--text-bold);
+    color: var(--color-accent)
+}
+
+.profile-wrapper p{
+    font-size: var(--text-size-sm);
+    font-weight: var(--text-medium);
+    text-align: center;
+}
+
+.button-links {
+    width: 18rem;
+    padding: var(--spacing-150);
+    background-color: var(--color-primary-700);
+    border: 0;
+    border-radius: var(--spacing-100);
+    color: var(--color-neutral);
+    font-weight: var(--text-medium);
+}
+
+.button-links:hover{
+    color: var(--color-primary-900);
+    background-color: var(--color-accent);
+    cursor: pointer;
+}
+
+.attribution{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+}
+
+.attribution img{
+    width: 10%;
+    margin-left: var(--spacing-100);
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+/* tablet */
+
+@media screen and (min-width: 768px){
+    .profile-wrapper{
+        width: 28.5rem;
+    }
+}
+
+
+/* desktop */
+
+@media screen and (min-width: 1024px){
+    .profile-wrapper{
+        width: 24rem;
+    }
+
+}
+
+
